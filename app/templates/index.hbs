@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="text-center">
+      {{#link-to "wines.new"}}
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        Add a New Wine Review
+      {{/link-to}}
+    </h2>
+  </div> <!-- /col-md-12 -->
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="col-md-offset-4 col-md-4">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Search Wines</button>
+      </span>
+    </div> <!-- /input group -->
+  </div> <!-- /col-md-4 -->
+</div> <!-- /row -->
+
+<div class="row"> <!-- search results outer container -->
+  <div class="col-md-offset-2 col-md-8"> <!-- search results outer container -->
+    {{#each model as |wine|}}
+    <div class="row"> <!-- wine item -->
+      <div class="col-md-2">
+        <img src="sample-wine-thumbnail.jpeg">
+      </div>
+      <div class="col-md-9">
+        <div>{{wine.vineyard}}</div>
+        <div>{{wine.type}}</div>
+        <div>{{wine.vintage}}</div>
+      </div>
+      <div class="col-md-1">
+        {{wine.ratingAvg}} 
+        <span class="glyphicon glyphicon-star"></span>
+      </div>
+    </div> <!-- /row -->
+    {{/each}}
+  </div> <!-- /col-md-2 -->
+</div> <!-- /row -->
+
