@@ -6,8 +6,8 @@
       </div> {{!-- /photo --}}
       <div class="col-md-9"> {{!-- details --}}
         <div class="row"> {{!-- vineyard and year --}}
-          <div class="col-md-5"> {{!-- vineyard --}}
-            vineyard
+          <div class="form-group col-md-5"> {{!-- vineyard --}}
+            <label>Vineyard:</label> {{input}}
           </div> {{!-- /vineyard --}}
           <div class="col-md-offset-2 col-md-5"> {{!-- year --}}
             year
@@ -37,40 +37,10 @@
 
         <div class="row"> {{!-- individual ratings --}}
           <div class="col-md-6">
-            L:
-            <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
+            L: {{star-rating}}
           </div>
           <div class="col-md-6 rating-dean">
-            D:
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-star"></span>
-            </button>
+            D: {{star-rating}}
           </div>
         </div> {{!-- individual ratings --}}
       </div> {{!-- /details --}}
