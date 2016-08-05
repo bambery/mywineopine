@@ -1,0 +1,88 @@
+<form {{action "formSubmit" on="submit"}}>
+  <div class="row"> {{!-- photo + details --}}
+
+    <div class="col-md-3 photo-upload"> {{!-- photo --}}
+      <div class="form-group">
+        <label class="control-label" for="uploadPhoto">Upload a photo</label>
+        <input class="form-control" id="uploadPhoto" type="file">
+      </div>
+    </div> {{!-- /photo --}}
+
+    <div class="col-md-9"> {{!-- details --}}
+      <div class="row"> {{!-- vineyard and year --}}
+        <div class="form-group col-md-8"> {{!-- vineyard --}}
+          <label class="control-label" for="vineyard">Vineyard</label>
+          {{input class="form-control" id="vineyard" type="text" value=model.vineyard}}
+        </div> {{!-- /vineyard --}}
+
+        <div class="form-group col-md-4"> {{!-- year --}}
+          <label class="control-label" for="year">Year</label>
+          <input class="form-control" id="year">
+        </div> {{!-- /year --}}
+      </div> {{!-- /vineyard and year --}}
+
+      <div class="row"> {{!-- type and price --}}
+        <div class="form-group col-md-8"> {{!-- type --}}
+          <label class="control-label" for="wineType">Type</label>
+          <select class="form-control" id="wineType">
+            <option value="pino noir">Pino Noir</option>
+            <option value="cabernet sauvignon">Cabernet Sauvignon</option>
+            <option value="merlot">Merlot</option>
+          </select>
+        </div> {{!-- /type --}}
+
+        <div class="form-group col-md-4"> {{!-- price --}}
+          <label class="control-label" for="price">Price</label>
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input class="form-control" type="number" id="price">
+          </div> {{!-- /input-group --}}
+        </div> {{!-- /price --}}
+
+      </div> {{!-- /type and price --}}
+
+      <div class="row"> {{!-- location --}}
+
+        <div class="form-group col-md-4"> {{!-- region or city --}}
+          <label class="control-label" for="regionOrCity">City/Region</label>
+          <input class="form-control" type="text" id="regionOrCity">
+        </div> {{!-- /region or city --}}
+
+        <div class="form-group col-md-4"> {{!-- state or province --}}
+          <label class="control-label" for="stateOrProvince">State/Province</label>
+          <input class="form-control" id="stateOrProvince" type="text">
+        </div> {{!-- /state or province --}}
+
+        <div class="form-group col-md-4"> {{!-- country --}}
+          <label class="control-label" for="country">Country</label>
+          <input class="form-control" id="country" type="text">
+        </div> {{!-- country --}}
+
+      </div> {{!-- /location --}} 
+
+      <div class="row"> {{!-- ratings --}}
+        <div class="form-group col-md-6">
+          <label class="control-label">L:</label>
+          {{star-rating}}
+        </div>
+
+        <div class="form-group col-md-6">
+          <label class="control-label">D:</label>
+          {{star-rating}}
+        </div>
+      </div> {{!-- /ratings --}}
+
+    </div> {{!-- /details --}}
+  </div> {{! -- /photo + details --}}
+
+  <div class="row"> {{!-- review --}}
+    <div class="form-group col-md-12">
+      <label class="control-label" for="review">Review</label>
+      <textarea class="form-control" rows="5"></textarea>
+    </div>
+  </div> {{!-- /review --}}
+
+  <div class="form-group"> {{!-- submit button --}}
+    <button type="submit" class="btn btn-lg btn-primary pull-right">Submit</button>
+  </div> {{!-- /submit button --}}
+</form>

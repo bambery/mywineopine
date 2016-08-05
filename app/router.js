@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('wines', function() {
+  this.route('reviews', function() {
     this.route('new');
   });
 });

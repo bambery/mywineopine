@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-let wines = [{
+let reviews = [{
   id: 1,
   vineyard: "Peter Michael",
   type: "cabernet sauvignon",
@@ -40,6 +40,6 @@ let wines = [{
 
 export default Ember.Route.extend({
   model(){
-    return wines;
+    return reviews;
   }
 });
