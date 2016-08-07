@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 let reviews = [{
   id: 1,
-  vineyard: "Peter Michael",
+  producer: "Peter Michael",
   type: "cabernet sauvignon",
-  vintage: 2012,
+  year: 2012,
   ratingAvg: 5,
   ratingDean: 5,
   ratingLauren: 5,
@@ -14,9 +14,9 @@ let reviews = [{
   region: "Napa Valley"
 }, {
   id: 2,
-  vineyard: "Evening Land",
+  producer: "Evening Land",
   type: "pinot noir",
-  vintage: 2012,
+  year: 2012,
   ratingAvg: 4.5,
   ratingDean: 4,
   ratingLauren: 5,
@@ -26,9 +26,9 @@ let reviews = [{
   region: "Dundee"
 },{
   id: 120,
-  vineyard: "Gramercy",
+  producer: "Gramercy",
   type: "syrah",
-  vintage: 2013,
+  year: 2013,
   ratingAvg: 4,
   ratingDean: 3,
   ratingLauren: 5,
