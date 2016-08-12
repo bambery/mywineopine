@@ -1,5 +1,6 @@
 import Model from 'ember-data/model';
-import attr from 'ember-data/attr';
+import DS from 'ember-data';
+// import attr from 'ember-data/attr';
 // import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
@@ -14,7 +15,7 @@ export default Model.extend({
   regionOrCity: DS.attr('string'),
   stateOrProvince: DS.attr('string'),
   country: DS.attr('string'),
-  avgRating: DS.attr('number'),
+  ratingAvg: DS.attr('number'),
   ratingLauren: DS.attr('number'),
   ratingDean: DS.attr('number')
 });

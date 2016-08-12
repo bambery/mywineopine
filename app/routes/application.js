@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-let reviews = [{
+/*let reviews = [{
   id: 1,
   producer: "Peter Michael",
   type: "cabernet sauvignon",
@@ -37,9 +37,10 @@ let reviews = [{
   state: "Washington",
   region: "Walla Walla"
 }];
+*/
 
 export default Ember.Route.extend({
   model(){
-    return reviews;
+    return this.get('store').findAll('review');
   }
 });
