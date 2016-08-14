@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    foo() { alert("foo!")},
     formSubmit(newReview) {
       newReview.save().then(() => this.transitionTo('index'));
     }

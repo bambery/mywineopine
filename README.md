@@ -4,6 +4,9 @@
 * generalize wine to be drink
 ** renmae any fields which are wine specific
 ** label text needs to have context on drink type, ie producer for wine is vineyard or something, brewery for beer?
+* move new review form to its own component
+* the star ratings in the create form are kinda wonky right now... too much nesting. Make star rating component more flexible so it's not nesting components for the form field and the rating component
+* textarea on review form should fill the space between the bottom of the other form fields and the amount of space needed for submit button. Should have a better defined size on mobile devices.
 
 ## Prerequisites
 
