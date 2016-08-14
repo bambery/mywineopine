@@ -1,7 +1,9 @@
-# Wine-reviews
+# Wine-reviews todos and ideas
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+* autocomplete on inputs
+* generalize wine to be drink
+** renmae any fields which are wine specific
+** label text needs to have context on drink type, ie producer for wine is vineyard or something, brewery for beer?
 
 ## Prerequisites
 

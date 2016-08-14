@@ -1,4 +1,4 @@
-<form {{action "formSubmit" on="submit"}}>
+<form {{action "formSubmit" model on="submit"}}>
   <div class="row"> {{!-- photo + details --}}
 
     <div class="col-md-3 photo-upload"> {{!-- photo --}}
@@ -17,19 +17,23 @@
 
         <div class="form-group col-md-4"> {{!-- year --}}
           <label class="control-label" for="year">Year</label>
-          <input class="form-control" id="year">
+          {{input class="form-control" id="year" value=model.year}}
         </div> {{!-- /year --}}
       </div> {{!-- /producer and year --}}
 
       <div class="row"> {{!-- type and price --}}
         <div class="form-group col-md-8"> {{!-- type --}}
           <label class="control-label" for="wineType">Type</label>
+          {{!--          {{#power-select options=wineTypes onchange=(action "foo") as |wtype|}}
+            {{wtype}}
+            {{/power-select}} 
+            --}}
           <select class="form-control" id="wineType">
             <option value="pino noir">Pino Noir</option>
             <option value="cabernet sauvignon">Cabernet Sauvignon</option>
             <option value="merlot">Merlot</option>
           </select>
-        </div> {{!-- /type --}}
+        </div> {{!-- /wineType --}}
 
         <div class="form-group col-md-4"> {{!-- price --}}
           <label class="control-label" for="price">Price</label>
