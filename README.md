@@ -7,6 +7,8 @@
 * move new review form to its own component
 * the star ratings in the create form are kinda wonky right now... too much nesting. Make star rating component more flexible so it's not nesting components for the form field and the rating component
 * textarea on review form should fill the space between the bottom of the other form fields and the amount of space needed for submit button. Should have a better defined size on mobile devices.
+* photo upload area needs to fill parent's height
+* need to have duplicate checking for new types of wine
 
 ## Prerequisites
 
